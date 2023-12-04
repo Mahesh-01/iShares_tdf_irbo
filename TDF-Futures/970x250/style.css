@@ -328,7 +328,7 @@
   .calendar_item {
     position: absolute;
     transform-origin: 90.33% 36.6%;
-    width: 970px;
+    width: 970px; 
     height: 250px;
   }
   
