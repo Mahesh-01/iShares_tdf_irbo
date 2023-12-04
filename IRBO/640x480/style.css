@@ -158,13 +158,14 @@
   #cta {
     position: absolute;
     left: 408px;
-    top:390px;
+    top: 390px;
     display: inline-block;
     font-size: 23px;
     background-color: #ffffff;
     text-decoration: none;
     color: #000000;
-    padding: 13px 14px 12px 14px;
+    padding: 10px 14px 10px 14px;
+    line-height: inherit;
   }
   
   .btn {
