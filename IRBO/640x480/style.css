@@ -1,0 +1,340 @@
+@font-face {
+    font-family: "BLK Fort Extrabold";
+    src: /* Super Modern Browsers */ url("./fonts/blkfort-extrabold-webfont.woff2")
+      format("woff2");
+  }
+  
+  @font-face {
+    font-family: "BLK Fort Bold";
+    src: /* Super Modern Browsers */ url("./fonts/blkfort-bold-webfont.woff2")
+      format("woff2");
+  }
+  
+  @font-face {
+    font-family: "BLK Fort Book";
+    src: /* Super Modern Browsers */ url("./fonts/blkfort-book-webfont.woff2")
+      format("woff2");
+  }
+  
+  @font-face {
+    font-family: "BLK Fort Cond Bold";
+    src: /* Super Modern Browsers */ url("./fonts/blkfortcond-bold-webfont.woff2")
+      format("woff2");
+  }
+  
+  @font-face {
+    font-family: "BLK Fort Cond Light";
+    src: /* Super Modern Browsers */ url("./fonts/blkfortcond-light-webfont.woff2")
+      format("woff2");
+  }
+  
+  /* MAIN
+  ************************************************** */
+  body,
+  body * {
+    vertical-align: baseline;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #main-container {
+    visibility: hidden;
+    position: absolute;
+    width: 640px;
+    height: 480px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+  
+    /* */
+    overflow: hidden;
+  }
+  
+  #background_exit {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  #mainbg {
+    top: 0;
+    position: absolute;
+    width: 640px;
+    height: 480px;
+    background-color: #9e79d9;
+  }
+  
+  .canvas_img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 480px;
+    width: 640px;
+  }
+  
+  .canvas_size {
+    position: absolute;
+    width: 640px;
+    height: 480px;
+  }
+  
+  .Extrabold {
+    font-family: "BLK Fort Extrabold";
+  }
+  
+  .Bold {
+    font-family: "BLK Fort Bold";
+  }
+  
+  .Book {
+    font-family: "BLK Fort Book";
+  }
+  
+  
+  
+  #footer_wrapper {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 60px;
+    width: 300px;
+    background-color: #9e79d9;
+  }
+  
+  #footer {
+    position: absolute;
+    /*width: 110px;*/
+    left: 19px;
+    bottom: 15px;
+  
+    font-size: 11px;
+    letter-spacing: -0.03em;
+  }
+  
+  .maintext {
+    position: absolute;
+  
+    letter-spacing: -0.03em;
+  }
+  
+  .text1 {
+    display: flex;
+    align-items: flex-end;
+    top:69px;
+    left:38px;
+    height: auto;
+    line-height: 1.14em; 
+    font-size: 63.5px;
+  }
+  
+  .text2 {
+    display: flex;
+    top:80px;
+    left:38px;
+    height: 150px;
+    line-height: 22px;
+    word-spacing: 0.7px;
+    flex-direction: column;
+    font-size:29.5px;
+    line-height: 1.14em; 
+  }
+  
+  .text2 .Bold {
+    margin-top: -10px;
+    letter-spacing: -0.3px;
+    font-size: 29.5px;
+  }
+  
+  #cta {
+    position: absolute;
+    left: 408px;
+    top:390px;
+    display: inline-block;
+    font-size: 23px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+    padding: 13px 14px 12px 14px;
+  }
+  
+  .btn {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+    /* z-index: 200;*/
+  }
+  
+  #info {
+    font-family: "BLK Fort Book";
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  /* TERMS
+  ************************************************** */
+  #terms {
+    width: 640px;
+    height: 480px;
+    /*top: -1px;
+    left: -1px;*/
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  #close {
+    position: absolute;
+    width: 15px;
+    top: 40px;
+    right: 40px;
+    padding: 3px;
+  }
+  
+  .scollbtns {
+    position: absolute;
+    top: 0px;
+    width: 35px;
+    height: 15px;
+    /*background-color: rgba(1,255,255,0.5);*/
+  
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #scroll {
+    position: absolute;
+    width: 35px;
+    top: 69px;
+    right: 33px;
+  }
+  
+  #up {
+    top: 5px;
+    background-image: url("images/up_triangle.svg");
+    background-size: 15px;
+  }
+  
+  #circle {
+    top: 28px;
+    background-image: url(images/circle.svg);
+    background-size: 7px;
+  }
+  
+  #down {
+    top: 50px;
+    background-size: 15px;
+    background-image: url("images/down_triangle.svg");
+  }
+  
+  #text_wrapper {
+    position: absolute;
+    height: 236px;
+    width: 489px;
+    left: 38px;
+    top: 100px;
+    padding-right: 0px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  /* #terms_text {
+    font-size: 10px;
+    line-height: 12px;
+  } */
+  
+  #text_wrapper::-webkit-scrollbar,
+  #terms_text::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .noselect {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+  
+  .nopointer {
+    pointer-events: none;
+  }
+  
+  :focus {
+    outline: none;
+  }
+  ::-moz-focus-inner {
+    border: 0;
+  }
+  
+  #info img {
+    height: 10px;
+  }
+  
+  .Bold.copy {
+    font-family: "BLK Fort Cond Bold";
+    font-size: 23px;
+    line-height: 1.1em;
+  }
+  
+  .Bold.copy.inner {
+    font-family: "BLK Fort Cond Bold";
+    font-size: 14px;
+  }
+  
+  .Book.copy {
+    font-family: "BLK Fort Cond Light";
+    font-size: 14px;
+    line-height: 1.1em;
+  }
+  .animation_container {
+    height: 480px;
+    width: 640px;
+    position: absolute;
+  }
+  
+  .animation_container img {
+    position: absolute;
+    height: 480px;
+    width: 640px;
+  }
+  
+  .prompt_text {
+    color: white;
+    position: absolute;
+    top: 112px;
+    left: 65px;
+    font-size: 44px;
+  }
+  
+  .generate_text {
+    top: 223px;
+    left: 65px;
+    position: absolute;
+    line-height: 44px;
+    word-spacing: -0.7px;
+    font-size: 44px;
+  }
+  
+  #anim{
+    transform: translateX(-20px);
+  }
+  
+  span a{
+    color: black;
+    text-decoration: none;
+  }
