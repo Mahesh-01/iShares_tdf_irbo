@@ -43,6 +43,7 @@ function revealTerms() {
   gsap.to([".text2", "#info", ".anim_container", ".anim", "#t1", ".hide","#cta"],0.3,  {autoAlpha:0});
   gsap.to(["#terms",], 0.6, { y: 0, ease:"power4.inOut", delay:0.3, autoAlpha: 1 });
   gsap.to("#terms_text", .2, { y: 0 });
+  gsap.to("#cta", .3, {opacity:0, display:"none"},0.3,);
 }
 
 function hideTerms() {
@@ -51,7 +52,7 @@ function hideTerms() {
     
     gsap.to(["#terms"], 0.6, { y: 30, autoAlpha: 0, ease:"power4.inOut"});
     gsap.to([".text2", "#info", ".hide" ],0.3, {autoAlpha:1, delay: 0.6});
-    gsap.to(["#cta",], 0.6, { y: 0, ease:"power4.inOut", delay:0.3, autoAlpha: 1 });
+    gsap.to("#cta", .6, {y:0, opacity:1, display:"block", ease:"power4.inOut", delay:0.3, autoAlpha: 1 });
 }
 
 function default_over(event) {

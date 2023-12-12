@@ -5,6 +5,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="ad.size" content="width=970,height=250">
+  <script type="text/javascript">
+    var clickTag = "https://www.ishares.com/us";
+  </script>
 </head>
 <body>
   
@@ -152,6 +155,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/adKit/adkit.js"></script> 
-
+    <script>
+      var clickArea = document.getElementById("background_exit");
+      clickArea.onclick = function () {
+        window.open(clickTag);
+      };
+  </script>
 </body>
 </html>

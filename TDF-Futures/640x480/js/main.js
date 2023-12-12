@@ -1,3 +1,5 @@
+
+
 var creative = {}
 
 
@@ -13,6 +15,7 @@ function init() {
   addListeners()
   show()
 }
+var cta = document.querySelector('#cta');
 
 /* DOM REFERENCES
 ************************************************** */
@@ -53,15 +56,14 @@ function revealTerms() {
   gsap.to([".text2", "#info", ".anim_container", ".anim", "#t1", ".hide","#cta"],0.3,  {autoAlpha:0});
   gsap.to(["#terms",], 0.6, { y: 0, ease:"power4.inOut", delay:0.3, autoAlpha: 1 });
   gsap.to("#terms_text", .2, { y: 0 });
+  gsap.to("#cta", .2, {opacity:0, display:"none"},0.3,);
 }
 
 function hideTerms() {
-  //event.stopPropagation();
-  
-    
+  //event.stopPropagation();  
     gsap.to(["#terms"], 0.6, { y: 30, autoAlpha: 0, ease:"power4.inOut"});
     gsap.to([".text2", "#info", ".hide" ],0.3, {autoAlpha:1, delay: 0.6});
-    gsap.to(["#cta",], 0.6, { y: 0, ease:"power4.inOut", delay:0.3, autoAlpha: 1 });
+    gsap.to("#cta", .2, {opacity:1, display:"block", ease:"power4.inOut", delay:0.3, autoAlpha: 1 });
 }
 
 function default_over(event) {
@@ -142,7 +144,9 @@ function show() {
 
 
 /* ANIMATE AD
+
 ************************************************** */
+
 function animate() {
 
   var container = document.getElementById("confettiContainer");
@@ -274,3 +278,25 @@ try {
     addEventListener('load', init)
   }
 }
+
+
+
+
+// var infoBtn = document.querySelector('#info');
+// var hideCta = document.querySelector('#cta');
+
+// infoBtn.addEventListener('click', function(event) {
+//   hideCta.style.display="none";
+// });
+
+
+
+
+
+// infoBtn.addEventListener("toggle", (event) => {
+//   if (hideCta.style.display="block") {
+//     hideCta.style.display="none";
+//   } else {
+//     hideCta.style.display="block";
+//   }
+// });
