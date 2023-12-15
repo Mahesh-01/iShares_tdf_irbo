@@ -255,10 +255,6 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  /* #terms_text {
-    font-size: 10px;
-    line-height: 12px;
-  } */
   
   #text_wrapper::-webkit-scrollbar,
   #terms_text::-webkit-scrollbar {
